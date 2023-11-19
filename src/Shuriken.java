@@ -23,6 +23,8 @@ public class Shuriken
 		
 		StartX = containerWidth / 2;
 		StartY = containerHeight / 2;
+		setX(StartX);
+		setY(StartY);
 		SetTarget(StartX, StartY);
 		
 	 	thread = new Thread(this);
