@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NinjaWar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Screen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Startup.java" afterDir="false" />
+    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="feat: initial commit with Startup class and Screen managing class">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shuriken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Imagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ImagemMovida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PosicaoInvalidaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scenario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shuriken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/village.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +44,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/065515/Gabriel/FbUni/TecnicasProg/NinjaWar/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -57,6 +63,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Startup" />
@@ -77,11 +88,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700245141092</updated>
-      <workItem from="1700245142087" duration="3829000" />
+      <workItem from="1700245142087" duration="16714000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: initial commit with Startup class and Screen managing class">
+      <option name="closed" value="true" />
+      <created>1700324054240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700324054240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat: initial commit with Startup class and Screen managing class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: initial commit with Startup class and Screen managing class" />
   </component>
 </project>
