@@ -35,12 +35,6 @@ public class Shuriken
 		TargetY = y;
 	}
 	
-	public void ResetPosition()
-	{
-		setX(StartX);
-		setY(StartY);
-	}
-	
 	@Override
 	public void run() {
 		try {

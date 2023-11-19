@@ -9,8 +9,8 @@ public class Screen extends JFrame implements MouseMotionListener
     private static final int Width = 1300;
     private static final int Height = 700;
 
-    private Shuriken Weapon;
-    private Scenario NinjaVillage;
+    private final Shuriken Weapon;
+    private final Scenario NinjaVillage;
     
     public Screen()
     {
