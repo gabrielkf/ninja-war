@@ -4,24 +4,29 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-public class Image {
-    private BufferedImage img;
+public class Imagem {
+    private BufferedImage Picture;
     private int x;
     private int y;
 
     public void DrawWithSize(Graphics graphics, int width, int height)
     {
-        graphics.drawImage(getImg(), this.getX(), getY(), width, height, null);
+        graphics.drawImage(getPicture(), this.getX(), getY(), width, height, null);
     }
 
-    public BufferedImage getImg() {
-        return img;
+    public BufferedImage getPicture() {
+        return Picture;
     }
 
-    public void setImg(String path) {
+    public void setPicture(String path) {
         File fileImg = new File(path);
-        try { img = ImageIO.read(fileImg); }
-        catch (IOException e) {
+        
+        try 
+        {
+            Picture = ImageIO.read(fileImg);
+        }
+        catch (IOException e)
+        {
             e.printStackTrace();
         }
     }

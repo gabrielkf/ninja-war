@@ -1,7 +1,7 @@
 
-public class Shuriken
-	extends ImagemMovida
-	implements Runnable
+public class Shuriken 
+		extends ImagemMovida
+		implements Runnable
 {
 	private static final String ImagePath = "shuriken.png";
 	public static int Size = 50;
@@ -19,7 +19,7 @@ public class Shuriken
 	public Shuriken(int containerWidth, int containerHeight)
 	{
 		super(containerWidth - Size, containerHeight - Size);
-		this.setImg(ImagePath);
+		this.setPicture(ImagePath);
 		
 		StartX = containerWidth / 2;
 		StartY = containerHeight / 2;
@@ -56,10 +56,10 @@ public class Shuriken
 		
 		if (Math.abs(xDiff) < StopMargin && Math.abs(yDiff) < StopMargin) return;
 		
-		var velocityModule = Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+		var hypotenuse = Math.sqrt(xDiff * xDiff + yDiff * yDiff);
 		
-		var xStep = (double)xDiff * Velocity / velocityModule;
-		var yStep = (double)yDiff * Velocity / velocityModule;
+		var xStep = (double)xDiff * Velocity / hypotenuse;
+		var yStep = (double)yDiff * Velocity / hypotenuse;
 		
 		try
 		{

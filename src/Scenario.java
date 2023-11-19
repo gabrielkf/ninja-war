@@ -1,5 +1,5 @@
 
-public class Scenario extends Image
+public class Scenario extends Imagem
 {
 	private static final String ImagePath = "village.png";
 	
@@ -7,6 +7,6 @@ public class Scenario extends Image
 	{
 		this.setX(0);
 		this.setY(0);
-		this.setImg(ImagePath);
+		this.setPicture(ImagePath);
 	}
 }
