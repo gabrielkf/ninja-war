@@ -1,26 +1,25 @@
 import javax.swing.*;
-import java.awt.Graphics;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 public class Screen extends JFrame implements MouseMotionListener
 {
-    private static final String Title = "NinjaWar";
     private static final int Width = 1300;
     private static final int Height = 700;
 
-    private Shuriken Weapon;
-    private Scenario NinjaVillage;
-    private Ninja Character;
+    private Imagem Background;
+    private ImagemMovida Weapon;
+    private ImagemMovida Target;
     
-    public Screen()
+    public Screen(Imagem background, ImagemMovida weapon, ImagemMovida target, String title)
     {
-        Weapon = new Shuriken(Width, Height);
-        NinjaVillage = new Scenario();
-        Character = new Ninja(Width, Height);
+        Background = background;
+        Weapon = weapon;
+        Target = target;
         
         addMouseMotionListener(this);
-        setTitle(Title);
+        setTitle(title);
         setSize(Width, Height);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
@@ -52,18 +51,9 @@ public class Screen extends JFrame implements MouseMotionListener
     }
 
     public void renderizarImagens(Graphics graphics) {
-        NinjaVillage.DrawWithSize(
-                graphics,
-                Width,
-                Height);
-        Character.DrawWithSize(
-                graphics,
-                Ninja.Size,
-                Ninja.Size);
-        Weapon.DrawWithSize(
-                graphics,
-                Shuriken.Size,
-                Shuriken.Size);
+        Background.DrawWithSize(graphics);
+        Target.DrawWithSize(graphics);
+        Weapon.DrawWithSize(graphics);
     }
 
     @Override

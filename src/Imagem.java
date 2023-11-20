@@ -1,17 +1,28 @@
-import java.awt.Graphics;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-public class Imagem {
+public class Imagem
+{
     private BufferedImage Picture;
-    private int x;
-    private int y;
-
-    public void DrawWithSize(Graphics graphics, int width, int height)
+    private int X;
+    private int Y;
+    private final int Width;
+    private final int Height;
+    
+    public Imagem(int width, int height, int startX, int startY)
     {
-        graphics.drawImage(getPicture(), this.getX(), getY(), width, height, null);
+        Width = width;
+        Height = height;
+        X = startX;
+        Y = startY;
+    }
+
+    public void DrawWithSize(Graphics graphics)
+    {
+        graphics.drawImage(getPicture(), this.getX(), getY(), Width, Height, null);
     }
 
     public BufferedImage getPicture() {
@@ -30,20 +41,24 @@ public class Imagem {
             e.printStackTrace();
         }
     }
+    
+    public int getWidth() { return Width; }
+    
+    public int getHeight() { return Height; }
 
     public int getX() {
-        return x;
+        return X;
     }
 
     public void setX(int x) {
-        this.x = x;
+        this.X = x;
     }
 
     public int getY() {
-        return y;
+        return Y;
     }
 
     public void setY(int y) {
-        this.y = y;
+        this.Y = y;
     }
 }
