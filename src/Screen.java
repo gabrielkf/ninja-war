@@ -9,13 +9,15 @@ public class Screen extends JFrame implements MouseMotionListener
     private static final int Width = 1300;
     private static final int Height = 700;
 
-    private final Shuriken Weapon;
-    private final Scenario NinjaVillage;
+    private Shuriken Weapon;
+    private Scenario NinjaVillage;
+    private Ninja Character;
     
     public Screen()
     {
         Weapon = new Shuriken(Width, Height);
         NinjaVillage = new Scenario();
+        Character = new Ninja(Width, Height);
         
         addMouseMotionListener(this);
         setTitle(Title);
@@ -54,6 +56,10 @@ public class Screen extends JFrame implements MouseMotionListener
                 graphics,
                 Width,
                 Height);
+        Character.DrawWithSize(
+                graphics,
+                Ninja.Size,
+                Ninja.Size);
         Weapon.DrawWithSize(
                 graphics,
                 Shuriken.Size,

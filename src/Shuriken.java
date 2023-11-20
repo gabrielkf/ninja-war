@@ -4,31 +4,25 @@ public class Shuriken
 		implements Runnable
 {
 	private static final String ImagePath = "shuriken.png";
-	public static int Size = 50;
+	public static final int Size = 50;
 	private static final double Velocity = 5;
 	private static final int SleepTime = 20;
 	private static final int StopMargin = 3;
-	
-	private final int StartX;
-	private final int StartY;
 	private int TargetX;
 	private int TargetY;
-	
-	public Thread thread;
-	
+
 	public Shuriken(int containerWidth, int containerHeight)
 	{
 		super(containerWidth - Size, containerHeight - Size);
 		this.setPicture(ImagePath);
 		
-		StartX = containerWidth / 2;
-		StartY = containerHeight / 2;
-		setX(StartX);
-		setY(StartY);
-		SetTarget(StartX, StartY);
-		
-	 	thread = new Thread(this);
-		thread.start();
+		var startX = containerWidth / 2;
+		var startY = containerHeight / 2;
+		setX(startX);
+		setY(startY);
+		SetTarget(startX, startY);
+
+		new Thread(this).start();
 	}
 	
 	public void SetTarget(int x, int y)
@@ -38,15 +32,18 @@ public class Shuriken
 	}
 	
 	@Override
-	public void run() {
-		try {
+	public void run()
+	{
+		try
+		{
 			while (true)
 			{
 				ChaseTarget();
-				
 				Thread.sleep(SleepTime);
 			}
-		} catch (InterruptedException e) {
+		}
+		catch (InterruptedException e)
+		{
 			e.printStackTrace();
 		}
 	}

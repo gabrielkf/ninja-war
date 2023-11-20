@@ -1,4 +1,5 @@
-public class ImagemMovida extends Imagem {
+public class ImagemMovida extends Imagem
+{
 	private final int MaxX;
 	private final int MaxY;
 	

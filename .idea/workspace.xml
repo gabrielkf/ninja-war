@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="feat: initial commit with Startup class and Screen managing class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shuriken.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Imagem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ImagemMovida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PosicaoInvalidaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scenario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shuriken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/village.png" afterDir="false" />
+    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="fix: start position">
+      <change afterPath="$PROJECT_DIR$/dead-ninja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ninja.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ninja.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImagemMovida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImagemMovida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shuriken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shuriken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700245141092</updated>
-      <workItem from="1700245142087" duration="16714000" />
+      <workItem from="1700245142087" duration="26440000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial commit with Startup class and Screen managing class">
       <option name="closed" value="true" />
@@ -98,7 +95,39 @@
       <option name="project" value="LOCAL" />
       <updated>1700324054240</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: implement screen management and image classes">
+      <option name="closed" value="true" />
+      <created>1700425348572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700425348572</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: implement screen management and image classes">
+      <option name="closed" value="true" />
+      <created>1700425441266</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700425441266</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: naming">
+      <option name="closed" value="true" />
+      <created>1700428999018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700428999018</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: start position">
+      <option name="closed" value="true" />
+      <created>1700429233056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700429233056</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +136,30 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat: initial commit with Startup class and Screen managing class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: initial commit with Startup class and Screen managing class" />
+    <MESSAGE value="feat: implement screen management and image classes" />
+    <MESSAGE value="fix: naming" />
+    <MESSAGE value="fix: start position" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: start position" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Ninja.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ImagemMovida.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Ninja.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
