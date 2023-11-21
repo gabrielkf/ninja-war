@@ -6,14 +6,8 @@ public class Startup
     
     public static void main(String[] args)
     {
-        var backGround = new NinjaVillage(
-                ScreenWidth,
-                ScreenHeight,
-                0,
-                0);
-        
+        var backGround = new NinjaVillage(ScreenWidth, ScreenHeight);
         var weapon = new Shuriken(ScreenWidth, ScreenHeight);
-        
         var target = new Ninja(ScreenWidth, ScreenHeight);
         
         new Screen(backGround, weapon, target, Title);

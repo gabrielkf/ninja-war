@@ -5,9 +5,6 @@ import java.awt.event.MouseMotionListener;
 
 public class Screen extends JFrame implements MouseMotionListener
 {
-    private static final int Width = 1300;
-    private static final int Height = 700;
-
     private Imagem Background;
     private ImagemMovida Weapon;
     private ImagemMovida Target;
@@ -20,7 +17,7 @@ public class Screen extends JFrame implements MouseMotionListener
         
         addMouseMotionListener(this);
         setTitle(title);
-        setSize(Width, Height);
+        setSize(background.getWidth(), background.getHeight());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setLocationRelativeTo(this);

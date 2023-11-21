@@ -31,7 +31,7 @@ public class Shuriken
 		{
 			while (true)
 			{
-				ChaseTarget();
+				Move();
 				Thread.sleep(SleepTime);
 			}
 		}
@@ -39,5 +39,22 @@ public class Shuriken
 		{
 			System.out.println(exception.getMessage());
 		}
+	}
+
+	@Override
+	protected void Move() throws PosicaoInvalidaException
+	{
+		var xDiff = getTargetX() - getX() - getWidth()/2;
+		var yDiff = getTargetY() - getY() - getHeight()/2;
+
+		if (HasReachedTarget(xDiff, yDiff)) return;
+
+		var hypotenuse = Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+
+		var xStep = (double)xDiff * Velocity / hypotenuse;
+		var yStep = (double)yDiff * Velocity / hypotenuse;
+
+		moverDireita((int)xStep);
+		moverBaixo((int)yStep);
 	}
 }
