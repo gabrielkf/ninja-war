@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 
 public abstract class ImagemMovida extends Imagem
 {
@@ -7,7 +9,8 @@ public abstract class ImagemMovida extends Imagem
 	private final int ContainerHeight;
 
 	protected double Velocity = 5;
-	protected Rectangle Area;
+	private final Rectangle2D Area;
+	private ImagemMovida Collider;
 	private int TargetX;
 	private int TargetY;
 
@@ -30,7 +33,8 @@ public abstract class ImagemMovida extends Imagem
 		setY(startY);
 	}
 
-	protected abstract void Move() throws PosicaoInvalidaException, InterruptedException;
+	protected abstract void Move()
+			throws PosicaoInvalidaException, CollisionException, InterruptedException;
 	
 	protected boolean HasReachedTarget(int xDiff, int yDiff)
 	{
@@ -48,7 +52,7 @@ public abstract class ImagemMovida extends Imagem
 
 	public void moverDireita(int shift) throws PosicaoInvalidaException {
 		var x = getX() + shift;
-		Area.setLocation(getX(), getY());
+		Area.setFrame(getX(), getY(), getWidth(), getHeight());
 
 		if (OutOfHorizontal(x)) {
 			throw new PosicaoInvalidaException();
@@ -59,7 +63,7 @@ public abstract class ImagemMovida extends Imagem
 
 	public void moverBaixo(int shift) throws PosicaoInvalidaException {
 		var y = getY() + shift;
-		Area.setLocation(getX(), getY());
+		Area.setFrame(getX(), getY(), getWidth(), getHeight());
 
 		if (OutOfVertical(y)) {
 			throw new PosicaoInvalidaException();
@@ -77,5 +81,15 @@ public abstract class ImagemMovida extends Imagem
 		return y < -getHeight() / 2 &&
 				y < ContainerHeight - getHeight() / 2;
 	}
+
+	public ImagemMovida getCollider() {
+		return Collider;
+	}
+
+	public void setCollider(ImagemMovida collider) {
+		Collider = collider;
+	}
+	
+	public Rectangle2D getArea() { return Area; }
 }
 

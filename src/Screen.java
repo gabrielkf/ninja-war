@@ -15,6 +15,9 @@ public class Screen extends JFrame implements MouseMotionListener
         Weapon = weapon;
         Target = target;
         
+        Weapon.setCollider(target);
+        Target.setCollider(weapon);
+        
         addMouseMotionListener(this);
         setTitle(title);
         setSize(background.getWidth(), background.getHeight());
