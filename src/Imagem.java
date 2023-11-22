@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
@@ -30,11 +31,10 @@ public class Imagem
     }
 
     public void setPicture(String path) {
-        File fileImg = new File(path);
-        
         try 
         {
-            Picture = ImageIO.read(fileImg);
+            var fileStream = new FileInputStream(path);
+            Picture = ImageIO.read(fileStream);
         }
         catch (IOException e)
         {
