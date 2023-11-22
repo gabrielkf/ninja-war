@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="feat: configure Ninja movement">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeadNinjaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollisionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImagemMovida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImagemMovida.java" afterDir="false" />
+    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="feat: implemented collision">
       <change beforePath="$PROJECT_DIR$/src/Ninja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ninja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shuriken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shuriken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,7 @@
       <workItem from="1700245142087" duration="34888000" />
       <workItem from="1700487476834" duration="16000" />
       <workItem from="1700523438677" duration="7930000" />
-      <workItem from="1700586676126" duration="7043000" />
+      <workItem from="1700586676126" duration="7488000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial commit with Startup class and Screen managing class">
       <option name="closed" value="true" />
@@ -169,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700609916455</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: implemented collision">
+      <option name="closed" value="true" />
+      <created>1700617324132</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700617324132</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,15 +187,16 @@
     <MESSAGE value="feat: add moving ninja" />
     <MESSAGE value="feat: extract, reassign responsabilities; add area management" />
     <MESSAGE value="feat: configure Ninja movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: configure Ninja movement" />
+    <MESSAGE value="feat: implemented collision" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented collision" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Ninja.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/src/Screen.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

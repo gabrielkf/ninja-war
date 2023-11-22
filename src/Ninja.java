@@ -5,8 +5,8 @@ public class Ninja
     private static final String AliveNinja = "ninja.png";
     private static final String DeadNinja = "dead-ninja.png";
     public static final int Size = 150;
-    private static final int SleepTime = 5;
-    private static final int StopTime = 500;
+    private static final int SleepTime = 3;
+    private static final int StopTime = 600;
     private static final int Offset = 50;
     private final int[][] Positions;
     
@@ -47,13 +47,18 @@ public class Ninja
         }
         catch (CollisionException collisionException)
         {
-            setPicture(DeadNinja);
             System.out.println(collisionException.getMessage());
         }
         catch(Exception exception)
         {
             System.out.println("Ninja: " + exception.getMessage());
         }
+    }
+    
+    private void SetDead()
+    {
+        Alive = false;
+        setPicture(DeadNinja);
     }
 
     @Override
@@ -71,7 +76,7 @@ public class Ninja
         {
             if (CollidedWithWeapon())
             {
-                throw new CollisionException();
+                SetDead();
             }
             
             var hypotenuse = Math.sqrt(xDiff * xDiff + yDiff * yDiff);
