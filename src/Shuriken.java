@@ -32,8 +32,6 @@ public class Shuriken
 			while (true)
 			{
 				Move();
-//				var myBox = "Shuriken: (" + getArea().getX() + "," + getArea().getY() + "), " + getWidth() + ", " + getHeight();
-//				System.out.println(myBox);
 				Thread.sleep(SleepTime);
 			}
 		}
@@ -59,4 +57,7 @@ public class Shuriken
 		moverDireita((int)xStep);
 		moverBaixo((int)yStep);
 	}
+
+	@Override
+	public void Reset() { }
 }

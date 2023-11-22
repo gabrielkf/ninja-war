@@ -1,9 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-public class Screen extends JFrame implements MouseMotionListener
+public class Screen extends JFrame implements MouseMotionListener, MouseListener
 {
     private Imagem Background;
     private ImagemMovida Weapon;
@@ -19,6 +20,7 @@ public class Screen extends JFrame implements MouseMotionListener
         Target.setCollider(weapon);
         
         addMouseMotionListener(this);
+        addMouseListener(this);
         setTitle(title);
         setSize(background.getWidth(), background.getHeight());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -65,5 +67,30 @@ public class Screen extends JFrame implements MouseMotionListener
     public void mouseMoved(MouseEvent e)
     {
         Weapon.SetTarget(e.getX(), e.getY());
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        Target.Reset();
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
     }
 }

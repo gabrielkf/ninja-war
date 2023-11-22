@@ -36,6 +36,8 @@ public abstract class ImagemMovida extends Imagem
 	protected abstract void Move()
 			throws PosicaoInvalidaException, CollisionException, InterruptedException;
 	
+	public abstract void Reset();
+	
 	protected boolean HasReachedTarget(int xDiff, int yDiff)
 	{
 		return Math.abs(xDiff) < StopMargin && Math.abs(yDiff) < StopMargin;
@@ -46,9 +48,6 @@ public abstract class ImagemMovida extends Imagem
 		TargetX = x;
 		TargetY = y;
 	}
-	
-	public int getTargetX() { return TargetX; }
-	public int getTargetY() { return TargetY; }
 
 	public void moverDireita(int shift) throws PosicaoInvalidaException {
 		var x = getX() + shift;
@@ -81,6 +80,9 @@ public abstract class ImagemMovida extends Imagem
 		return y < -getHeight() / 2 &&
 				y < ContainerHeight - getHeight() / 2;
 	}
+
+	public int getTargetX() { return TargetX; }
+	public int getTargetY() { return TargetY; }
 
 	public ImagemMovida getCollider() {
 		return Collider;

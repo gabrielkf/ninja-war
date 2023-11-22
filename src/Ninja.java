@@ -40,8 +40,6 @@ public class Ninja
             while (true)
             {
                 Move();
-//                var myBox = "Ninja: (" + getArea().getX() + "," + getArea().getY() + "), " + getWidth() + ", " + getHeight(); 
-//                System.out.println(myBox);
                 Thread.sleep(StopTime);
             }
         }
@@ -60,6 +58,14 @@ public class Ninja
         Alive = false;
         setPicture(DeadNinja);
     }
+
+    @Override
+    public void Reset()
+    {
+        Alive = true;
+        setPicture(AliveNinja);
+    }
+
 
     @Override
     protected void Move() throws PosicaoInvalidaException, CollisionException, InterruptedException
@@ -95,7 +101,6 @@ public class Ninja
 
         State = nextState;
     }
-    
     private boolean CollidedWithWeapon()
     {
         if (getCollider() == null) return false;

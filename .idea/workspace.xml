@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="feat: implemented collision">
+    <list default="true" id="8aa6e9c5-d7bc-473f-b712-8ae86c54c1a9" name="Changes" comment="feat: make ninja die">
+      <change beforePath="$PROJECT_DIR$/src/ImagemMovida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImagemMovida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ninja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ninja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shuriken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shuriken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
       <workItem from="1700245142087" duration="34888000" />
       <workItem from="1700487476834" duration="16000" />
       <workItem from="1700523438677" duration="7930000" />
-      <workItem from="1700586676126" duration="7488000" />
+      <workItem from="1700586676126" duration="8102000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial commit with Startup class and Screen managing class">
       <option name="closed" value="true" />
@@ -172,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700617324132</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: make ninja die">
+      <option name="closed" value="true" />
+      <created>1700617484452</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700617484452</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,14 +199,15 @@
     <MESSAGE value="feat: extract, reassign responsabilities; add area management" />
     <MESSAGE value="feat: configure Ninja movement" />
     <MESSAGE value="feat: implemented collision" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented collision" />
+    <MESSAGE value="feat: make ninja die" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: make ninja die" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Screen.java</url>
-          <line>53</line>
+          <line>54</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
